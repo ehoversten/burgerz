@@ -2,4 +2,15 @@
     <h1>About Section</h1>
     <br>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tenetur non molestiae autem sint repellat accusantium fugit officiis itaque? Nihil vel unde reiciendis, accusantium odit nesciunt dolorum error, aperiam consectetur quis aliquam nisi laudantium ducimus labore rerum ullam suscipit porro debitis et repellendus? Dolores atque incidunt quasi tempora totam quod fugiat minima molestiae, veniam debitis rerum architecto. Tenetur explicabo quod magni sed porro quos, alias modi reprehenderit pariatur perspiciatis animi hic fugit nostrum omnis fuga dicta officia ratione officiis qui dolor neque itaque eos quis! Necessitatibus cupiditate quidem accusamus nostrum atque praesentium excepturi in hic dolor corrupti, natus quo amet ut officiis illum sint fugiat eum sapiente ipsa rerum dolore? Beatae laborum distinctio nesciunt enim eius eos inventore voluptate aliquid dolore exercitationem aut maiores natus iste, odio excepturi nemo officiis, culpa quam illum voluptatem dolores quisquam. Sunt magni aspernatur non porro ipsum illum modi, sequi impedit quia, vitae vero praesentium.</p>
+
+    {{#if userArr }}
+        <h1>Hi There, Array Is being passed</h1>
+    {{/if }}
+
+    <ul>
+        {{#each userArr}}
+        <li>User ID:{{ id }} - {{last_name}},{{ first_name }}</li>
+        <li>{{ email }} || {{ user_pass }}</li>
+        {{/each }}
+    </ul>
 </div>
